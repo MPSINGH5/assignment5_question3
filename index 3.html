@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script src="q3.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0px;
+        }
+        body{
+        background: url(https://thumbs.gfycat.com/ComplexFrailGrackle-max-1mb.gif) no-repeat center/cover;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+        table {
+            width: 100%;
+            font-size: 2vw;
+            font-family: 'Pacifico', cursive;
+            padding-top: 20px;
+        }
+
+        .right {
+            text-align: right;
+
+        }
+
+        .right a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.6vw;
+        }
+
+        .right a:hover {
+            color: white;
+            background: black;
+        }
+
+        .head {
+            font-size: 2vw;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+        }
+
+        h3 {
+            font-family: cursive;
+            font-size: 3vw;
+        }
+
+        p {
+            font-size: 2.3vw;
+            font-family:cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                Name: Manvendra Pratap Singh<br>
+                Roll Number: 2006215
+            </td>
+            <td class="right">
+                <a href="">GO TO NEXT QUESTION =>>></a><br>
+                <a href=""><<<=GO TO NEXT QUESTION </a><br>
+                <a href=""><b><u>SEE CODE</u></b></a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div class="head">
+        ASSIGNMENT 5
+    </div>
+    <div class="head">
+        Question 3: Explain thee difference between Undefined and not defined variables in JS using HTML page.
+    </div>
+    <h1>
+        Difference between undefined and not defined
+    </h1>
+    <h3>
+        Undefined:
+    </h3>
+    <p>
+        It works like when we declared a variable in the code but did not assign the value before printing the
+        variable value.
+    </p>
+    <p>
+        Example 1: When value is not assigned in array or object:
+        <br>
+        let numArray = [5,9,8,5];<br>
+        console.log(numArray);<br>
+        typeof(numArray[2])<br>
+        //"undefined"
+    </p>
+    <h3>
+        Not defined:
+    </h3>
+    <p>
+        It works like when we did not declare the variable and try to call that variable.
+    </p>
+
+    <p>
+        The reason why the variable a was printed with undefined value above but b was declared as not defined was
+        because of the way variable hoisting works in javascript i.e.
+        the variable declarations are processed before code execution takes place in javascript.
+        For Example:
+        Internally the execution for the variable a above was as follows:-
+        <br>
+        var a;
+        <br>
+        console.log(a); //undefined
+        <br>
+        a = 5;
+        <br>
+        While for variable b above it was as follows:-
+        <br>
+        console.log(b); // b is not defined
+        <br>
+        window.b = 5;
+    </p>
+
+</body>
+
+</html>
